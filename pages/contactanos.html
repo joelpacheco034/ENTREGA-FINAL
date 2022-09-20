@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+        <link rel="icon" href="/multimedia/favicon.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f491513d94.js" crossorigin="anonymous"></script>
+        <title>Shark</title>
+    </head>
+<body>
+    <header>
+        
+    <!--------LOGO------>
+    <div class="logocontenedor">
+            
+        <H1>Shark</H1>
+        
+        <img src="../multimedia/logoshark.png" alt="sharkgym">
+    
+    </div>
+<!-------NAV---------------------->
+        <nav>
+            <ul class="menu">
+                <li class="item"><a href="../index.html">Inicio</a></li>
+                <li class="item"><a href="../pages/productos.html">Productos</a>
+                    <ul class="submenu">
+                        <li class="subitem"><a href="/pages/productos.html#hipervinculomusculosas">Musculosas</a></li>
+                        <li class="subitem"><a href="/pages/productos.html#hipervinculoremeras">Remeras</a></li>
+                        <li class="subitem"><a href="/pages/productos.html#hipervinculobuzos">Buzos</a></li>
+                    </ul>
+                </li>
+                    
+                <li class="item"><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li class="item"><a href="../pages/contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+            
+            <section class="sectionformulario">
+                <img src="../multimedia/contactanos/fondocontactanos.jpeg" alt="gimnasiogod">
+        <!--FORMULARIO---->
+                <form class="form">
+        
+            <!--TITULO------------------------>
+                    <h1 class="titulo">Registrarse</h1>
+        
+            <!--CAJAS-DE-ENTRADA-DE-DATOS------------------------------------------------>
+                    <input class="cajas" type="text" placeholder="Nombre" required maxlength="30">
+                    <input class="cajas" type="text" placeholder="Apellido" required maxlength="30">
+                    <input class="cajas" type="email" placeholder="Email" required maxlength="30">
+                    <input class="cajas" type="password" placeholder="Password" required maxlength="30">
+                
+                <div class="cajas">
+                    <label for="sexo">Sexo:</label>
+                    <input type="radio" name="sexo" value="hombre" required>
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" name="sexo" value="mujer">
+                    <label for="mujer">Mujer</label>
+                </div>
+            
+                <div class="cajas">
+                    <label for="Nacionalidad">Nacionalidad:</label>
+                    <select name="nacionalidad">
+                    <option value="Argetina">Argentina</option>
+        
+                    <option value="Brasil">Brasil</option>
+        
+                    <option value="Uruguay">Uruguay</option>
+        
+                    <option value="venezuela">venezuela</option>
+        
+                    <option value="Ecuador">Ecuador</option>
+        
+                    </select>
+                </div>
+        
+                <div class="cajas">
+                    <label for="fechanacimiento">Fecha de nacimiento:</label>
+                    <input type="date" name="fechanacimiento" required>
+                </div>
+            <!--TERMINOS-Y-CONDICIONES---------------------------------------------------------------------------------->
+                <p class="termino1"><input type="checkbox"> Estoy de acuerdo con <a class="termino2" href="">Terminos y
+                    Condiciones</a></p>
+        
+            <!--BOTON-DE-REGISTRARSE-------------------------->
+                <input type="submit" class="btn" value="REGISTRAR">
+        
+            <!--YA-TENGO-CUENTA----------------------------------------------------------->
+                <p class="tengo-cuenta"><a href="" class="tengo-cuenta">Ya tengo cuenta</a></p>
+        
+                </form>
+    
+        </section>
+    
+<!---FOOTER--------------------------------------------------------->
+    <footer class="footer">
+        <h3>Todos los derechos reservados por SHARK Ⓡ</h3>
+        <img src="/multimedia/logoshark.png" alt="logoshark">
+<!---REDES SOCIALES-->
+        <div class="redessociales">
+            <i class="fa-brands fa-instagram"><a href="#">Instagram</a></i>
+
+            <i class="fa-brands fa-whatsapp"><a href="#">Whatsapp</a> </i>
+
+            <i class="fa-brands fa-facebook"><a href="#"> Facebook</i></a></i>
+        </div>
+
+    </footer>
