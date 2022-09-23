@@ -266,7 +266,6 @@ nav {
     width: 80%;
     margin: auto;
     border-radius: 10px;
-    border:solid 3px #000000 ;
     
 }
 
@@ -356,7 +355,6 @@ nav {
     width: 80%;
     margin: auto;
     border-radius: 10px;
-    border:solid 3px #000000 ;
 }
 
 
@@ -383,58 +381,53 @@ nav {
 }
 /*----------------------------------SECTION5INDEX----------------------------------------------*/
 .section5 {
-    width: 90%;
-    height: 500px;
-    background-color:#ffffff;
-    text-align: center;
+    width: 90vw;
     margin: auto;
-    margin-top: 40px;
-    border-radius: 20px;
+    text-align: center;
+    background-color: #e2dfdf;
+    
 }
+
 .section5 h2 {
-    background-color: #000000;
-    color: #ffffff;
     width: 100%;
-    margin: auto;
-    border-radius: 20px;
-}
-.section5 .galeria{
-    display: inline;
-    margin: auto;
-    margin-top: 40px;
-    
-}
-.section5 img{
-    width: 220px;
-    border-radius: 20px;
-    display:inline;
-    height: 400px;
-    object-fit: cover;
-    opacity: .9;
-    text-align: center;
-    margin-top: 40px;
-    
-    
+    background-color: #0a0368;
+    color: #e2dfdf;
+    border-radius: 10px;
 }
 
-.section5 p{
-    display:inline;
-    position: absolute;
-    margin-top:170px;
-    margin-left: -260px;
-    font-size: 55px;
-    rotate: 270deg;
-    color: #ffffff;
-    font-weight: bolder;
-    padding:0;
-    
+.actividades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 70vw;
+    margin: auto;
 }
 
-.section5 img:hover{
-    margin-top: 40px;
-    opacity: .4;
-    transition: .6s;
+.actividades img {
+    display: flex;
+    width: 70vw;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+
+.galeria:hover img{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+    transition: .7s;
+    border-radius: 20px;
     cursor: pointer;
+    filter: opacity(.5);
+}
+
+.galeria p{
+    font-size: 5.5rem;
+    display: flex;
+    margin-top: -120px;
+    color: #ffffff;
 }
 /*------------------------UBICACIONES----------*/
 .lugares{ 
@@ -462,14 +455,13 @@ nav {
 
 /*----------------------------------FOOTER----------------------------------------------*/
 footer{
-    height: 300px;
+    height: 400px;
     background-color: #555555;
     margin-top: 50px;
     padding: 0;
     text-align: center;
-    z-index: 200;
-    position: relative;
 }
+
 
 .footerpie {
     display: flex;
@@ -515,60 +507,147 @@ footer{
 }
 /*----------------------------------REDES-SOCIALES---------------------------------------------*/
 .redessociales{
-    color: #ffffff;
+    position: fixed;
+    right:1%;
+    top: 70%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    align-items: flex-end;
+    z-index: 100;
+    border-radius: 20px;
+
     
 }
 
-.redessociales a{
-    display: inline;
-    margin-top: 120px;
-    font-size: 20px;
-    color:#ffffff ;
-    position: relative;
-    padding: 20px;
+.iconosredes a{
+    text-decoration: none;
+    color: white;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
 }
+ 
+
+.iconoinstagram {
+    background-color: #d42121;
+    border-radius: 1rem 0 0 ;
+
+}
+
+.iconoinstagram:hover {
+    background-color: #850000;
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    
+
+}
+
+.iconowhatsapp:hover {
+    background-color: #1e8b1b;
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    
+}
+
+.iconowhatsapp {
+    background-color: #4de948;
+    position: relative;
+}
+
+.iconofacebook {
+    background-color: #1917a8;
+    border-radius: 0 0  0 1rem;
+}
+
+.iconofacebook:hover {
+    background-color: #01035a;
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    
+}
+
 /*----------------------------------PRODUCTOS----------------------------------------------*/
 .sectionproductos {
     margin: auto;
     text-align: center;
-    width: 100%;
+    width: 90vw;
+}
+
+.sectionproductos h2 {
+    font-size: 2rem;
+    margin-top: 50px;
+    border-bottom: #555555 solid 2px;
+    width: 40%;
+    text-align: center;
+    margin: 50px auto 50px auto;
 }
 
 .imagenproductos {
-    width: 200px;
-    display: inline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+
+
 }
 
-.imagenproductos h2 {
-    background-color: #fdac42;
+.imagenproductos .card {
+    margin: 20px 40px;
+}
+
+/*-----------------------ACORDEONINDEX------------*/
+
+.accordion-body1{
+width: 100%;
+overflow: hidden;
+display: flex;
+background-image: url(../multimedia/index/boxeo.jpg);
+background-size:cover;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.accordion-body2{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    background-image: url(../multimedia/index/musculacion.jpg);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+.accordion-body3{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        background-image: url(../multimedia/index/croosfit.jpg);
+        justify-content: center;
+        background-size:cover;
+        align-items: center;
+        text-align: center;
+        }
+.accordion-body img {
+    width: 30rem;
+    height: 60vh;
+}
+
+.accordion-body1 p {
+    font-size: 1.5rem;
     color: #ffffff;
-    width: 60%;
-    margin: auto;
-    border-radius: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding: 100px;
+}
+.accordion-body2 p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 100px;
 }
 
-.galeriamusculosas img{
-    width: 250px;
-    margin: 20px 40px 20px 40px;
-    box-shadow: 10px 10px 60px #000000;
-    height: 300px;
-}
-
-.galeriaremeras img{
-    width: 250px;
-    box-shadow: 10px 10px 60px #000000;
-    margin: 80px 40px 20px 40px;
-    height: 300px;
-}
-
-.galeriabuzos img{
-    width: 250px;
-    box-shadow: 10px 10px 60px #000000;
-    margin: 80px 40px 20px 40px;
-    height: 300px;
-    
+.accordion-body3 p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 100px;
 }
 /*----------------------------------FORMULARIO----------------------------------------------*/
 
