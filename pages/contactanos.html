@@ -3,55 +3,74 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Llena el formulario y comenza a entrenar">
+        <meta name="keywords" content="inscribirse,entrenar">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/style.css">
+        <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
-        <link rel="icon" href="./multimedia/favicon.ico">
+        <link rel="icon" href="../multimedia/favicon.ico">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/estilo.css">
         <script src="https://kit.fontawesome.com/f491513d94.js" crossorigin="anonymous"></script>
-        <title>Shark</title>
+        <title>Shark | Contactanos</title>
     </head>
 <body>
     <header>
         
-    <!--------LOGO------>
+    <!----LOGO--------------->
     <div class="logocontenedor">
-            
-        <H1>Shark</H1>
+        <a href="../index.html"><H1>Shark</H1></a>
+            <img src="../multimedia/logoshark.png" alt="sharkgym">
         
-        <img src="../multimedia/logoshark.png" alt="sharkgym">
     
     </div>
-<!-------NAV---------------------->
-        <nav>
-            <ul class="menu">
-                <li class="item"><a href="../index.html">Inicio</a></li>
-                <li class="item"><a href="../pages/productos.html">Productos</a>
-                    <ul class="submenu">
-                        <li class="subitem"><a href="../pages/productos.html#hipervinculomusculosas">Musculosas</a></li>
-                        <li class="subitem"><a href="../pages/productos.html#hipervinculoremeras">Remeras</a></li>
-                        <li class="subitem"><a href="../pages/productos.html#hipervinculobuzos">Buzos</a></li>
-                    </ul>
-                </li>
-                    
-                <li class="item"><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li class="item"><a href="../pages/contactanos.html">Contactanos</a></li>
+<!----NAV------------------------>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid m-auto">
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+          <li class="nav-item ">
+            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Productos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../pages/productos.html#hipervinculoremeras">Remeras</a></li>
+              <li><a class="dropdown-item" href="../pages/productos.html#hipervinculomusculosas">Musculosas</a></li>
+              <li><a class="dropdown-item" href="../pages/productos.html#hipervinculobuzos">Buzos</a></li>
             </ul>
-        </nav>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/contactanos.html">Contactanos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
 
 
     </header>
             
             <section class="sectionformulario">
-                <img src="../multimedia/contactanos/fondocontactanos.jpeg" alt="gimnasiogod">
         <!--FORMULARIO---->
                 <form class="form">
         
             <!--TITULO------------------------>
-                    <h1 class="titulo">Registrarse</h1>
+                    <h2 class="titulo">Registrarse</h2>
         
             <!--CAJAS-DE-ENTRADA-DE-DATOS------------------------------------------------>
                     <input class="cajas" type="text" placeholder="Nombre" required maxlength="30">
@@ -92,7 +111,7 @@
                     Condiciones</a></p>
         
             <!--BOTON-DE-REGISTRARSE-------------------------->
-                <input type="submit" class="btn" value="REGISTRAR">
+                <input type="submit" class="btn-form" value="REGISTRAR">
         
             <!--YA-TENGO-CUENTA----------------------------------------------------------->
                 <p class="tengo-cuenta"><a href="" class="tengo-cuenta">Ya tengo cuenta</a></p>
@@ -156,7 +175,8 @@
 </div>
 
 </footer>
-
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>   
 </body>
     
 

@@ -2,21 +2,24 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Veni a conocer nuestros gimnasios SHARK.">
+    <meta name="keywords" content="Gimnasio Rosario,croosfit,boxeo,entrenar,gimnasio zona centro">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
     <link rel="icon" href="./multimedia/favicon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilo.css">
     <script src="https://kit.fontawesome.com/f491513d94.js" crossorigin="anonymous"></script>
-    <title>Shark</title>
+    <title>Shark | Inicio</title>
 </head>
 <body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <header>
         
     <!----LOGO--------------->
@@ -27,39 +30,39 @@
         
         </div>
 <!----NAV------------------------>
-        <nav class="navbar">
-            <ul class="menu">
-                <li class="item"><a href="./index.html">Inicio</a></li>
-                <li class="item"><a href="./pages/productos.html">Productos</a>
-                    <ul class="submenu">
-                        <li class="subitem"><a href="./pages/productos.html#hipervinculomusculosas">Musculosas</a></li>
-                        <li class="subitem"><a href="./pages/productos.html#hipervinculoremeras">Remeras</a></li>
-                        <li class="subitem"><a href="./pages/productos.html#hipervinculobuzos">Buzos</a></li>
-                    </ul>
-                </li>
-                    
-                <li class="item"><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li class="item"><a href="./pages/contactanos.html">Contactanos</a></li>
-            </ul>
-        </nav>
-    <div class="containernavresp">
-        <nav class="navresponsive">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid m-auto">
+              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+                  <li class="nav-item ">
+                    <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
 
-            <ul class="menu-responsive">
-                <li class="item-responsive"><a href="./index.html">Inicio</a></li>
-                <li class="item-responsive"><a href="./pages/productos.html">Productos</a>
-                    <ul class="submenu-responsive">
-                        <li class="subitem-responsive"><a href="./pages/productos.html#hipervinculomusculosas">Musculosas</a></li>
-                        <li class="subitem-responsive"><a href="./pages/productos.html#hipervinculoremeras">Remeras</a></li>
-                        <li class="subitem-responsive"><a href="./pages/productos.html#hipervinculobuzos">Buzos</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./pages/productos.html#hipervinculoremeras">Remeras</a></li>
+                      <li><a class="dropdown-item" href="./pages/productos.html#hipervinculomusculosas">Musculosas</a></li>
+                      <li><a class="dropdown-item" href="./pages/productos.html#hipervinculobuzos">Buzos</a></li>
                     </ul>
-                </li>
-                    
-                <li class="item-responsive"><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li class="item-responsive"><a href="./pages/contactanos.html">Contactanos</a></li>
-            </ul>
-        </nav>
-    </div>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contactanos.html">Contactanos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
     </header>
 <!-----------------SECTION1---------->
@@ -70,13 +73,13 @@
 <!-------------------SECTION2------->
         <section class="section2">
             
-            <div class="plan1">
+            <div class="plan1" data-aos="zoom-in-down">
                 <h3>PLAN BASIC</h3>
                 <h4>por $2500</h4>
                 <p>Entrena en nuestros gimnasios <br> de<b> Rosario</b></p>
             </div>
 
-            <div class="plan2">
+            <div class="plan2"  data-aos="zoom-in-down">
                 <h3>PLAN BLACK</h3>
             <h4>por $4700</h4>
             <p>Entrena en todos nuestros gimnasios<br> de<b> Argentina</b></p>
@@ -92,7 +95,6 @@
         </div>
 
     </div>
-
 
 <!----------SECTION3----------------------------->
         <section class="nuestraubicacion">
@@ -124,12 +126,10 @@
             
             </div>
 
-            <div>
-
-            </div>
+        </div>
         </section>
             </div>
-
+<!--GIMNASIO-CARRUSEL-->
        <div class="nuestrogimnasio">
             <h2 >Nuestros gimnasios</h2>
         </div>    
@@ -138,13 +138,13 @@
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="./multimedia/index/carrousel/gimnasio3.jpg" class="d-block w-100" alt="...">
+                        <img src="./multimedia/index/carrousel/gimnasio3.jpg" class="d-block w-100" alt="gimnasioshark">
                       </div>
                       <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./multimedia/index/carrousel/gimnasio2.jpg" class="d-block w-100" alt="...">
+                        <img src="./multimedia/index/carrousel/gimnasio2.jpg" class="d-block w-100" alt="gimnasioshark">
                       </div>
                       <div class="carousel-item">
-                        <img src="./multimedia/index/carrousel/gimnasio-vacio-728.jpg" class="d-block w-100" alt="...">
+                        <img src="./multimedia/index/carrousel/gimnasio-vacio-728.jpg" class="d-block w-100" alt="gimnasioshark">
                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -164,11 +164,11 @@
 
             </div>
            
-
+<!--NUESTROSGIMNASIOS-->
         <div class="lugares">
             <h2>Encontra tu  <strong>SHARK</strong> mas cercano</h2>
            <div class="ubicaciones">
-            <div >
+            <div>
                 <a href=""><img src="./multimedia/index/ubicaciones/1.jpg" alt="sharkRosario"></a>
                 <h3>Rosario</h3>
             </div>
@@ -197,7 +197,7 @@
     
     <!--------------SECTION5---------------------------->
     <div class="section5">
-        <h2>Nuestras actividades</h2>
+        <h2 class="subtitulo">Nuestras actividades</h2>
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
@@ -237,6 +237,8 @@
               </div>
             </div>
           </div>
+
+    </div>
     
     </main>
 
@@ -295,7 +297,12 @@
 </div>
 
 </footer>
-    
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script> 
+            AOS.init({ 
+            easing: 'ease-out-back',duration: 20000}) </script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>   
 </body>
     
 

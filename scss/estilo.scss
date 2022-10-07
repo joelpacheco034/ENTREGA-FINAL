@@ -1,0 +1,674 @@
+$color-secundario:#fd9f24;
+$max-width:100%;
+$bordersubtitulo:2px solid #fd9f24;
+$bg-hover:#3eccd1;
+$white:#ffffff;
+$mobile:320px;
+$tablet:768px;
+$laptop:1024px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Oswald',sans-serif;
+}
+
+header{
+    width: 100vw;
+    /*---------LOGO------*/
+    .logocontenedor{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+
+        a{
+            text-decoration: none;
+            h1{
+                font-size: 6rem;
+                color: #ffffff;
+                font-family:playball,cursive;
+
+            }
+        }
+
+        img{
+            width: 100px;
+        }
+
+    }
+}
+    
+/*-----------NAV------*/
+.navbar{
+    background-color: #000000;
+    position: relative;
+    z-index: 100;
+
+    ul{
+        justify-content: center;
+        align-items: center;
+    }
+        li{
+            justify-content: space-around;
+        align-items: center;
+        }
+    }
+    .nav-item{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        .nav-link{
+            font-size: 1.25rem;
+            color: #fd9f24;
+            &:hover{
+                color: $white;
+                background-color: $color-secundario;
+            }
+            
+        }
+    }
+    .collapse{
+        .dropdown{
+            text-align: center;
+            width: 100%;
+            border-radius: 4px;
+
+            }
+            .dropdown-menu{
+            background-color: #ffffff;
+            width: 100%;
+            margin: auto;
+            a{
+                font-size: 1.1rem;
+                color: $color-secundario;
+                &:hover{
+                    color:#ffffff;
+                    background-color: $color-secundario;
+                }
+            }
+            }
+        }
+
+    
+
+
+
+
+
+.section1{
+    background-image:url(../multimedia/index/iniciogimnasio.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    display: none;
+    .tituloimagen{
+        font-size: 4rem;
+        color: #ffffff;
+        display:flex;
+        margin-left: 2rem;
+        border: none;
+        text-align:left;
+    }
+    @media (min-width:$tablet){
+        display: block;
+    }
+
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto 20px auto;
+    
+    @media (min-width:$laptop){
+        flex-direction: row;
+
+    }
+
+    .plan1{
+        width: 100%;
+        margin: 10px auto ;
+        text-align: center;
+        background-color: #fd9f24;
+        overflow: hidden;
+        box-shadow: 20px 10px 30px #000000;
+        transition: all 1s ease;
+
+        h3{
+            font-size:2.6rem;
+        }
+
+        h4{
+            font-size: 2rem;
+            color:#ffffff ;
+
+
+        }
+
+        p {
+            font-size: 1.4rem;
+            color: #000000;
+            border-bottom: 2px solid rgb(0, 0, 0);
+            width: 80%;
+            margin:10px auto;
+        }
+
+
+    }
+
+    .plan2{
+        width: 100%;
+        margin: 10px auto ;
+        text-align: center;
+        background-color: #131313;
+        overflow: hidden;
+        box-shadow: 20px 10px 30px #000000;
+        transition: all 1s ease;
+
+        h3{
+            font-size:2.6rem;
+            color: #fd9f24;
+        }
+
+        h4{
+            font-size: 2rem;
+            color:#ffffff ;
+
+
+        }
+
+        p {
+            font-size: 1.4rem;
+            color: #ffffff;
+            border-bottom: 2px solid white;
+            width: 80%;
+            margin:10px auto;
+        }
+    }
+
+}
+
+/*-------BTN--INSCRIPCION*/
+
+.contenedorboton{
+    width: 70vw;
+    text-align: center;
+    margin:10px auto;
+
+    .botoninscripcion{
+        background-color:#e92828;
+        width:100%;
+        border-radius: 6px;
+        transition: .5s;
+        &:hover{
+            background-color:#a51111;
+            cursor: pointer;
+                }
+
+        a{
+            color: #ffffff;
+            font-size: 1.5rem;
+            text-decoration: none;
+
+
+        }
+    }
+}
+/*----------NUESTRA--UBICACION---*/
+.nuestraubicacion{
+    width: 100vw;
+    margin: 40px auto;
+    h2{
+        width: 60%;
+        margin: 20px auto;
+        text-align: center;
+        border-bottom: 2px solid #fd9f24;
+        border-left: 2px solid #fd9f24;
+    }
+
+    .section3{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        @media (min-width:$laptop){
+            flex-direction: row;
+        }
+        .mapa{
+            width: 100%;
+            margin:auto;
+            iframe{
+                width: 100%;
+                margin: auto;
+
+            }
+        }
+
+        .informacion{
+            width: 100%;
+            text-align: center;
+            display: grid;
+            @media (min-width:$laptop){
+                font-size: 1.5rem;
+            }
+            .direccion{
+                border-left: $color-secundario 2px solid;
+                border-bottom: $color-secundario 2px solid;
+
+            }
+            .horarios{
+                background-color: #d8d6d6;
+                border-right:$color-secundario 2px solid;
+            }
+        }
+    }
+}
+/*-----NUESTROS--GIMNASIOS----*/
+.nuestrogimnasio{
+    h2{
+        width: 60%;
+        margin: 20px auto;
+        text-align: center;
+        border-bottom: 2px solid #fd9f24;
+        border-left: 2px solid #fd9f24;
+    }
+}
+
+/*--SECTION4--*/
+#carouselExampleInterval{
+    width: 90%;
+    margin: auto;
+    display: none;
+    @media (min-width:$tablet){
+        display: block;
+
+    }
+
+}
+.lugares{
+    text-align: center;
+    margin: 20px auto;
+    background-color: #e2dede;
+    width: 80vw;
+    .ubicaciones{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 250px;
+            margin: 10px 10px;
+            &:hover{
+                opacity: 0.5;
+                transition: 0.8s;
+            }
+        }
+}
+}
+
+/*--SECTION5--*/
+
+.section5{
+    .subtitulo{
+        width: 60%;
+        margin: 20px auto;
+        text-align: center;
+        border-bottom: 2px solid #fd9f24;
+        border-left: 2px solid #fd9f24;
+    }
+
+    .accordion{
+        .accordion-body1{
+            color: #ffffff;
+            background-image:url(../multimedia/index/boxeo.jpg);
+            height: 150px;
+            @media(min-width:$tablet){
+                font-size: 1.3rem;
+            }
+            @media(min-width:$laptop){
+                font-size: 1.5rem;
+            }
+            
+        }
+
+        .accordion-body2{
+            background-image:url(../multimedia/index/musculacion.jpg);
+            color: $white;
+            height: 150px;
+            @media(min-width:$tablet){
+                font-size: 1.3rem;
+            }
+            @media(min-width:$laptop){
+                font-size: 1.5rem;
+            }
+
+        }
+
+        .accordion-body3{
+            background-image:url(../multimedia/index/croosfit.jpg);
+            color: #ffffff;
+            height: 150px;
+            @media(min-width:$tablet){
+                font-size: 1.3rem;
+            }
+            @media(min-width:$laptop){
+                font-size: 1.5rem;
+            }
+
+        }
+    }
+}
+
+/*--FOOTER--*/
+
+.footer{
+    width: 100vw;
+    height: 400px;
+    background-color: #3a3939;
+    border-top: 2px solid #000000;
+    .footerpie{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    h3{
+        color: #ffffff;
+        margin-top: 10px;
+    }
+
+    img{
+        width: 100px;
+    }
+
+    .informacionfooter{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        align-self:left;
+        text-align: left;
+        .columnasfooter{
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #525050;
+            h4{
+                color: $color-secundario;
+            }
+            a{
+                color: #ffffff;
+                text-decoration: none;
+                text-align:left;
+            }
+        }
+
+    }
+
+}
+/*REDES-SOCIALES*/
+.redessociales{
+    position: fixed;
+    right:1%;
+    top:80%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    align-items: flex-end;
+    z-index: 100;
+    border-radius: 20px;
+    float: right;
+    .iconosredes {
+        margin:5px 0 5px 0;
+        .iconoinstagram {
+            background-color: $color-secundario;
+            border-radius: 100% ;
+            &:hover {
+            background-color: #850000;
+            border-radius: 1rem 0 0 1rem;}
+        }
+        .iconowhatsapp {
+            background-color: #25D366;
+            border-radius: 100% ;
+            &:hover {
+                background-color: $color-secundario;
+                border-radius: 1rem 0 0 1rem;
+                
+            }
+        }
+
+        .iconofacebook {
+            background-color:  #3b5998;
+            border-radius: 100% ;
+            &:hover {
+                background-color: #01035a;
+                border-radius: 1rem 0 0 1rem;
+                
+            }
+        }
+    a{
+        text-decoration: none;
+        color: white;
+        padding: .7rem;
+        display: flex;
+        transition: all .5s;
+    }
+}
+}
+
+/*--PRODUCTOS*/
+.bg-productos{
+    background-color: #525050;
+    width: 100vw;
+.sectionproductos{
+    margin: auto;
+    text-align: center;
+    width: 80vw;
+    background-color: #ffffff;
+    h2{
+        width: 40%;
+        border-bottom:$bordersubtitulo;
+        border-left:$bordersubtitulo;
+        margin: auto;
+    }
+
+    .galeriaproductos{  
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+        .card{
+            width: 150px;
+            margin: 40px 40px;
+            overflow: hidden;
+            height: auto;
+            }
+            img{
+                overflow: hidden;
+                &:hover{
+                    opacity: 0.6;
+                    transition: .5s;
+                    cursor:pointer;
+
+                }
+                }
+            }
+            .btn{
+                background-color: $color-secundario;
+                width: 100%;
+                &:hover{
+                    color:#ffffff;
+                    background-color:$bg-hover;
+                }
+            }
+        }
+    }
+    
+/*--NOSOTROS*/
+section{
+    width: 100vw;
+    h2{
+        border-bottom: $bordersubtitulo;
+        border-left:$bordersubtitulo;
+        margin:20px auto;
+        width: 40%;
+        text-align: center;
+    }
+    .nuestroteam{
+        display: flex;
+        flex-wrap: wrap;
+        .profesores{
+            margin: auto;
+            text-align: center;
+            img{
+                display: inline;
+                width: 200px;
+                background-color: #000000;
+                height: 150px;
+                border-radius: 100%;
+                margin-left: 10px;
+                margin-top: 40px;
+                border: 2px solid #000000;
+            }
+    }
+    }
+    .objetivos{
+        width: 90vw;
+        background-color: #e2e1e1;
+        border-radius: 10px;
+        margin: auto;
+        text-align: center;
+    img{
+        width: 100%;
+        border-radius: 10px;
+        display: none;
+        margin-bottom: 100px;
+        @media(min-width:768px){
+            display: block;
+        }
+    }
+        h2{
+            color: $white;
+            border-radius: 20px;
+            background-color: $color-secundario;
+            width: 100%;
+        }
+    }
+    .valores{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        h3{
+            color: black;
+            background-color: #f3b96c;
+            border-radius: 10px;
+            margin: 10px auto;
+            width: 180px;
+            align-items: center;
+        }
+    }
+}
+
+/*SECTION-FORMULARIO*/
+.sectionformulario{
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+    background-image:url(../multimedia/contactanos/fondocontactanos.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    
+    
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff91;
+        padding: 20px;
+        width: 90%;
+        margin:auto;
+        border-radius: 2px;
+        @media(min-width:$tablet){
+            width: 50%;
+        }
+        .cajas{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 2px;
+            border: none;
+            border-left: 10px solid #000000;
+            transition: all .5s ease;
+            &:hover, .cajas:focus{
+                border-left: 10px solid $color-secundario;
+            }
+        }
+        h2{
+            border-bottom: $bordersubtitulo;
+            border-left: $bordersubtitulo;
+            width: 100%;
+            color: black;
+        }
+        /*--TERMINOS-Y-CONDICIONES--*/
+
+
+        .termino1{
+            text-align: center;
+            color: #000000;
+        }
+
+        .termino2{
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /*--BOTON-DE-REGISTRARSE--*/
+        .btn-form{
+            width: 100%;
+            padding: 15px;
+            border-radius: 2px;
+            border: none;
+            margin: 20px 0;
+            font-size: 15px;
+            background: #000000;
+            color: #ffffff;
+            cursor: pointer;
+            transition: all .5s ease;
+            &:hover{
+                background: $color-secundario;
+            }
+        }
+        .tengo-cuenta{
+            text-align: center;
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+            &:hover{
+                color: #ffffff;
+            }
+        }
+        
+
+
+    }
+    }
+
