@@ -5,480 +5,498 @@
   text-decoration: none;
   font-family: 'Oswald',sans-serif; }
 
-body {
-  background-color: #ffffff;
-  /*-----------NAV------*/
-  /*-------BTN--INSCRIPCION*/
-  /*----------NUESTRA--UBICACION---*/
-  /*-----NUESTROS--GIMNASIOS----*/
-  /*--SECTION4--*/
-  /*--SECTION5--*/
-  /*--FOOTER--*/
-  /*REDES-SOCIALES*/
-  /*--PRODUCTOS*/
-  /*--NOSOTROS*/
-  /*SECTION-FORMULARIO*/ }
-  body header {
+header {
+  width: 100vw;
+  /*---------LOGO------*/ }
+  header .logocontenedor {
     width: 100vw;
-    /*---------LOGO------*/ }
-    body header .logocontenedor {
-      width: 100vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #000000; }
-      body header .logocontenedor a {
-        text-decoration: none; }
-        body header .logocontenedor a h1 {
-          font-size: 6rem;
-          color: #ffffff;
-          font-family: playball,cursive; }
-      body header .logocontenedor img {
-        width: 100px; }
-  body .navbar {
-    background-color: #000000;
-    position: relative;
-    z-index: 100; }
-    body .navbar ul {
-      justify-content: center;
-      align-items: center; }
-    body .navbar li {
-      justify-content: space-around;
-      align-items: center; }
-  body .nav-item {
-    width: 100%;
-    text-align: center;
-    margin-top: 10px; }
-    body .nav-item .nav-link {
-      font-size: 1.25rem;
-      color: #fd9f24; }
-      body .nav-item .nav-link:hover {
-        color: #ffffff;
-        background-color: #fd9f24; }
-  body .collapse .dropdown {
-    text-align: center;
-    width: 100%;
-    border-radius: 4px; }
-  body .collapse .dropdown-menu {
-    background-color: #ffffff;
-    width: 100%;
-    margin: auto; }
-    body .collapse .dropdown-menu a {
-      font-size: 1.1rem;
-      color: #fd9f24; }
-      body .collapse .dropdown-menu a:hover {
-        color: #ffffff;
-        background-color: #fd9f24; }
-  body .section1 {
-    background-image: url(../multimedia/index/iniciogimnasio.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 300px;
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
     display: flex;
-    justify-content: left;
-    align-items: center;
-    display: none; }
-    body .section1 .tituloimagen {
-      font-size: 4rem;
-      color: #ffffff;
-      display: flex;
-      margin-left: 2rem;
-      border: none;
-      text-align: left; }
-    @media (min-width: 768px) {
-      body .section1 {
-        display: block; } }
-  body .section2 {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 20px auto; }
-    @media (min-width: 1024px) {
-      body .section2 {
-        flex-direction: row; } }
-    body .section2 .plan1 {
-      width: 100%;
-      margin: 10px auto;
-      text-align: center;
-      background-color: #fd9f24;
-      overflow: hidden;
-      box-shadow: 20px 10px 30px #000000;
-      transition: all 1s ease; }
-      body .section2 .plan1 h3 {
-        font-size: 2.6rem; }
-      body .section2 .plan1 h4 {
-        font-size: 2rem;
-        color: #ffffff; }
-      body .section2 .plan1 p {
-        font-size: 1.4rem;
-        color: #000000;
-        border-bottom: 2px solid black;
-        width: 80%;
-        margin: 10px auto; }
-    body .section2 .plan2 {
-      width: 100%;
-      margin: 10px auto;
-      text-align: center;
-      background-color: #131313;
-      overflow: hidden;
-      box-shadow: 20px 10px 30px #000000;
-      transition: all 1s ease; }
-      body .section2 .plan2 h3 {
-        font-size: 2.6rem;
-        color: #fd9f24; }
-      body .section2 .plan2 h4 {
-        font-size: 2rem;
-        color: #ffffff; }
-      body .section2 .plan2 p {
-        font-size: 1.4rem;
+    background-color: #000000; }
+    header .logocontenedor a {
+      text-decoration: none; }
+      header .logocontenedor a h1 {
+        font-size: 6rem;
         color: #ffffff;
-        border-bottom: 2px solid white;
-        width: 80%;
-        margin: 10px auto; }
-  body .contenedorboton {
-    width: 70vw;
+        font-family: playball,cursive; }
+    header .logocontenedor img {
+      width: 100px; }
+
+/*-----------NAV------*/
+.navbar {
+  background-color: #000000;
+  position: relative;
+  z-index: 100; }
+  .navbar ul {
+    justify-content: center;
+    align-items: center; }
+  .navbar li {
+    justify-content: space-around;
+    align-items: center; }
+
+.nav-item {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px; }
+  .nav-item .nav-link {
+    font-size: 1.25rem;
+    color: #fd9f24; }
+    .nav-item .nav-link:hover {
+      color: #ffffff;
+      background-color: #fd9f24; }
+
+.collapse .dropdown {
+  text-align: center;
+  width: 100%;
+  border-radius: 4px; }
+
+.collapse .dropdown-menu {
+  background-color: #ffffff;
+  width: 100%;
+  margin: auto; }
+  .collapse .dropdown-menu a {
+    font-size: 1.1rem;
+    color: #fd9f24; }
+    .collapse .dropdown-menu a:hover {
+      color: #ffffff;
+      background-color: #fd9f24; }
+
+.section1 {
+  background-image: url(../multimedia/index/iniciogimnasio.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  display: none; }
+  .section1 .tituloimagen {
+    font-size: 4rem;
+    color: #ffffff;
+    display: flex;
+    margin-left: 2rem;
+    border: none;
+    text-align: left; }
+  @media (min-width: 768px) {
+    .section1 {
+      display: block; } }
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px auto; }
+  @media (min-width: 1024px) {
+    .section2 {
+      flex-direction: row; } }
+  .section2 .plan1 {
+    width: 100%;
+    margin: 10px auto;
     text-align: center;
-    margin: 10px auto; }
-    body .contenedorboton .botoninscripcion {
-      background-color: #e92828;
-      width: 100%;
-      border-radius: 6px;
-      transition: .5s; }
-      body .contenedorboton .botoninscripcion:hover {
-        background-color: #a51111;
-        cursor: pointer; }
-      body .contenedorboton .botoninscripcion a {
-        color: #ffffff;
-        font-size: 1.5rem;
-        text-decoration: none; }
-  body .nuestraubicacion {
-    width: 100vw;
-    margin: 40px auto; }
-    body .nuestraubicacion h2 {
-      width: 60%;
-      margin: 20px auto;
-      text-align: center;
-      border-bottom: 2px solid #fd9f24;
-      border-left: 2px solid #fd9f24; }
-    body .nuestraubicacion .section3 {
-      width: 90%;
-      margin: auto;
-      display: flex;
-      flex-direction: column; }
-      @media (min-width: 1024px) {
-        body .nuestraubicacion .section3 {
-          flex-direction: row; } }
-      body .nuestraubicacion .section3 .mapa {
-        width: 100%;
-        margin: auto; }
-        body .nuestraubicacion .section3 .mapa iframe {
-          width: 100%;
-          margin: auto; }
-      body .nuestraubicacion .section3 .informacion {
-        width: 100%;
-        text-align: center;
-        display: grid; }
-        @media (min-width: 1024px) {
-          body .nuestraubicacion .section3 .informacion {
-            font-size: 1.5rem; } }
-        body .nuestraubicacion .section3 .informacion .direccion {
-          border-left: #fd9f24 2px solid;
-          border-bottom: #fd9f24 2px solid; }
-        body .nuestraubicacion .section3 .informacion .horarios {
-          background-color: #d8d6d6;
-          border-right: #fd9f24 2px solid; }
-  body .nuestrogimnasio h2 {
+    background-color: #fd9f24;
+    overflow: hidden;
+    box-shadow: 20px 10px 30px #000000;
+    transition: all 1s ease; }
+    .section2 .plan1 h3 {
+      font-size: 2.6rem; }
+    .section2 .plan1 h4 {
+      font-size: 2rem;
+      color: #ffffff; }
+    .section2 .plan1 p {
+      font-size: 1.4rem;
+      color: #000000;
+      border-bottom: 2px solid black;
+      width: 80%;
+      margin: 10px auto; }
+  .section2 .plan2 {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #131313;
+    overflow: hidden;
+    box-shadow: 20px 10px 30px #000000;
+    transition: all 1s ease; }
+    .section2 .plan2 h3 {
+      font-size: 2.6rem;
+      color: #fd9f24; }
+    .section2 .plan2 h4 {
+      font-size: 2rem;
+      color: #ffffff; }
+    .section2 .plan2 p {
+      font-size: 1.4rem;
+      color: #ffffff;
+      border-bottom: 2px solid white;
+      width: 80%;
+      margin: 10px auto; }
+
+/*-------BTN--INSCRIPCION*/
+.contenedorboton {
+  width: 70vw;
+  text-align: center;
+  margin: 10px auto; }
+  .contenedorboton .botoninscripcion {
+    background-color: #e92828;
+    width: 100%;
+    border-radius: 6px;
+    transition: .5s; }
+    .contenedorboton .botoninscripcion:hover {
+      background-color: #a51111;
+      cursor: pointer; }
+    .contenedorboton .botoninscripcion a {
+      color: #ffffff;
+      font-size: 1.5rem;
+      text-decoration: none; }
+
+/*----------NUESTRA--UBICACION---*/
+.nuestraubicacion {
+  width: 100vw;
+  margin: 40px auto; }
+  .nuestraubicacion h2 {
     width: 60%;
     margin: 20px auto;
     text-align: center;
     border-bottom: 2px solid #fd9f24;
     border-left: 2px solid #fd9f24; }
-  body #carouselExampleInterval {
+  .nuestraubicacion .section3 {
     width: 90%;
     margin: auto;
-    display: none; }
-    @media (min-width: 768px) {
-      body #carouselExampleInterval {
-        display: block; } }
-  body .lugares {
-    text-align: center;
-    margin: 20px auto;
-    background-color: #e2dede;
-    width: 80vw; }
-    body .lugares .ubicaciones {
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 1024px) {
+      .nuestraubicacion .section3 {
+        flex-direction: row; } }
+    .nuestraubicacion .section3 .mapa {
       width: 100%;
-      margin: auto;
+      margin: auto; }
+      .nuestraubicacion .section3 .mapa iframe {
+        width: 100%;
+        margin: auto; }
+    .nuestraubicacion .section3 .informacion {
+      width: 100%;
+      text-align: center;
+      display: grid; }
+      @media (min-width: 1024px) {
+        .nuestraubicacion .section3 .informacion {
+          font-size: 1.5rem; } }
+      .nuestraubicacion .section3 .informacion .direccion {
+        border-left: #fd9f24 2px solid;
+        border-bottom: #fd9f24 2px solid; }
+      .nuestraubicacion .section3 .informacion .horarios {
+        background-color: #d8d6d6;
+        border-right: #fd9f24 2px solid; }
+
+/*-----NUESTROS--GIMNASIOS----*/
+.nuestrogimnasio h2 {
+  width: 60%;
+  margin: 20px auto;
+  text-align: center;
+  border-bottom: 2px solid #fd9f24;
+  border-left: 2px solid #fd9f24; }
+
+/*--SECTION4--*/
+#carouselExampleInterval {
+  width: 90%;
+  margin: auto;
+  display: none; }
+  @media (min-width: 768px) {
+    #carouselExampleInterval {
+      display: block; } }
+
+.lugares {
+  text-align: center;
+  margin: 20px auto;
+  background-color: #e2dede;
+  width: 80vw; }
+  .lugares .ubicaciones {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .lugares .ubicaciones img {
+      width: 250px;
+      margin: 10px 10px; }
+      .lugares .ubicaciones img:hover {
+        opacity: 0.5;
+        transition: 0.8s; }
+
+/*--SECTION5--*/
+.section5 .subtitulo {
+  width: 60%;
+  margin: 20px auto;
+  text-align: center;
+  border-bottom: 2px solid #fd9f24;
+  border-left: 2px solid #fd9f24; }
+
+.section5 .accordion .accordion-body1 {
+  color: #ffffff;
+  background-image: url(../multimedia/index/boxeo.jpg);
+  height: 150px; }
+  @media (min-width: 768px) {
+    .section5 .accordion .accordion-body1 {
+      font-size: 1.3rem; } }
+  @media (min-width: 1024px) {
+    .section5 .accordion .accordion-body1 {
+      font-size: 1.5rem; } }
+
+.section5 .accordion .accordion-body2 {
+  background-image: url(../multimedia/index/musculacion.jpg);
+  color: #ffffff;
+  height: 150px; }
+  @media (min-width: 768px) {
+    .section5 .accordion .accordion-body2 {
+      font-size: 1.3rem; } }
+  @media (min-width: 1024px) {
+    .section5 .accordion .accordion-body2 {
+      font-size: 1.5rem; } }
+
+.section5 .accordion .accordion-body3 {
+  background-image: url(../multimedia/index/croosfit.jpg);
+  color: #ffffff;
+  height: 150px; }
+  @media (min-width: 768px) {
+    .section5 .accordion .accordion-body3 {
+      font-size: 1.3rem; } }
+  @media (min-width: 1024px) {
+    .section5 .accordion .accordion-body3 {
+      font-size: 1.5rem; } }
+
+/*--FOOTER--*/
+.footer {
+  width: 100vw;
+  height: 400px;
+  background-color: #3a3939;
+  border-top: 2px solid #000000; }
+  .footer .footerpie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  .footer h3 {
+    color: #ffffff;
+    margin-top: 10px; }
+  .footer img {
+    width: 100px; }
+  .footer .informacionfooter {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-self: left;
+    text-align: left; }
+    .footer .informacionfooter .columnasfooter {
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid #525050; }
+      .footer .informacionfooter .columnasfooter h4 {
+        color: #fd9f24; }
+      .footer .informacionfooter .columnasfooter a {
+        color: #ffffff;
+        text-decoration: none;
+        text-align: left; }
+
+/*REDES-SOCIALES*/
+.redessociales {
+  position: fixed;
+  right: 1%;
+  top: 80%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  align-items: flex-end;
+  z-index: 100;
+  border-radius: 20px;
+  float: right; }
+  .redessociales .iconosredes {
+    margin: 5px 0 5px 0; }
+    .redessociales .iconosredes .iconoinstagram {
+      background-color: #fd9f24;
+      border-radius: 100%; }
+      .redessociales .iconosredes .iconoinstagram:hover {
+        background-color: #850000;
+        border-radius: 1rem 0 0 1rem; }
+    .redessociales .iconosredes .iconowhatsapp {
+      background-color: #25D366;
+      border-radius: 100%; }
+      .redessociales .iconosredes .iconowhatsapp:hover {
+        background-color: #fd9f24;
+        border-radius: 1rem 0 0 1rem; }
+    .redessociales .iconosredes .iconofacebook {
+      background-color: #3b5998;
+      border-radius: 100%; }
+      .redessociales .iconosredes .iconofacebook:hover {
+        background-color: #01035a;
+        border-radius: 1rem 0 0 1rem; }
+    .redessociales .iconosredes a {
+      text-decoration: none;
+      color: white;
+      padding: .7rem;
+      display: flex;
+      transition: all .5s; }
+
+/*--PRODUCTOS*/
+.bg-productos {
+  background-color: #525050;
+  width: 100vw; }
+  .bg-productos .sectionproductos {
+    margin: auto;
+    text-align: center;
+    width: 80vw;
+    background-color: #ffffff; }
+    .bg-productos .sectionproductos h2 {
+      width: 40%;
+      border-bottom: 2px solid #fd9f24;
+      border-left: 2px solid #fd9f24;
+      margin: auto; }
+    .bg-productos .sectionproductos .galeriaproductos {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center; }
-      body .lugares .ubicaciones img {
-        width: 250px;
-        margin: 10px 10px; }
-        body .lugares .ubicaciones img:hover {
-          opacity: 0.5;
-          transition: 0.8s; }
-  body .section5 .subtitulo {
-    width: 60%;
-    margin: 20px auto;
-    text-align: center;
+      .bg-productos .sectionproductos .galeriaproductos .card {
+        width: 150px;
+        margin: 40px 40px;
+        overflow: hidden;
+        height: auto; }
+      .bg-productos .sectionproductos .galeriaproductos img {
+        overflow: hidden; }
+        .bg-productos .sectionproductos .galeriaproductos img:hover {
+          opacity: 0.6;
+          transition: .5s;
+          cursor: pointer; }
+    .bg-productos .sectionproductos .btn {
+      background-color: #fd9f24;
+      width: 100%; }
+      .bg-productos .sectionproductos .btn:hover {
+        color: #ffffff;
+        background-color: #3eccd1; }
+
+/*--NOSOTROS*/
+section {
+  width: 100vw; }
+  section h2 {
     border-bottom: 2px solid #fd9f24;
-    border-left: 2px solid #fd9f24; }
-  body .section5 .accordion .accordion-body1 {
-    color: #ffffff;
-    background-image: url(../multimedia/index/boxeo.jpg);
-    height: 150px; }
-    @media (min-width: 768px) {
-      body .section5 .accordion .accordion-body1 {
-        font-size: 1.3rem; } }
-    @media (min-width: 1024px) {
-      body .section5 .accordion .accordion-body1 {
-        font-size: 1.5rem; } }
-  body .section5 .accordion .accordion-body2 {
-    background-image: url(../multimedia/index/musculacion.jpg);
-    color: #ffffff;
-    height: 150px; }
-    @media (min-width: 768px) {
-      body .section5 .accordion .accordion-body2 {
-        font-size: 1.3rem; } }
-    @media (min-width: 1024px) {
-      body .section5 .accordion .accordion-body2 {
-        font-size: 1.5rem; } }
-  body .section5 .accordion .accordion-body3 {
-    background-image: url(../multimedia/index/croosfit.jpg);
-    color: #ffffff;
-    height: 150px; }
-    @media (min-width: 768px) {
-      body .section5 .accordion .accordion-body3 {
-        font-size: 1.3rem; } }
-    @media (min-width: 1024px) {
-      body .section5 .accordion .accordion-body3 {
-        font-size: 1.5rem; } }
-  body .footer {
-    width: 100vw;
-    height: 400px;
-    background-color: #3a3939;
-    border-top: 2px solid #000000; }
-    body .footer .footerpie {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center; }
-    body .footer h3 {
-      color: #ffffff;
-      margin-top: 10px; }
-    body .footer img {
-      width: 100px; }
-    body .footer .informacionfooter {
-      width: 90%;
+    border-left: 2px solid #fd9f24;
+    margin: 20px auto;
+    width: 40%;
+    text-align: center; }
+  section .nuestroteam {
+    display: flex;
+    flex-wrap: wrap; }
+    section .nuestroteam .profesores {
       margin: auto;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      justify-items: center;
-      align-self: left;
-      text-align: left; }
-      body .footer .informacionfooter .columnasfooter {
-        display: flex;
-        flex-direction: column;
-        border-right: 1px solid #525050; }
-        body .footer .informacionfooter .columnasfooter h4 {
-          color: #fd9f24; }
-        body .footer .informacionfooter .columnasfooter a {
-          color: #ffffff;
-          text-decoration: none;
-          text-align: left; }
-  body .redessociales {
-    position: fixed;
-    right: 1%;
-    top: 80%;
+      text-align: center; }
+      section .nuestroteam .profesores img {
+        display: inline;
+        width: 200px;
+        background-color: #000000;
+        height: 150px;
+        border-radius: 100%;
+        margin-left: 10px;
+        margin-top: 40px;
+        border: 2px solid #000000; }
+  section .objetivos {
+    width: 90vw;
+    background-color: #e2e1e1;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center; }
+    section .objetivos img {
+      width: 100%;
+      border-radius: 10px;
+      display: none;
+      margin-bottom: 100px; }
+      @media (min-width: 768px) {
+        section .objetivos img {
+          display: block; } }
+    section .objetivos h2 {
+      color: #ffffff;
+      border-radius: 20px;
+      background-color: #fd9f24;
+      width: 100%; }
+  section .valores {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+    section .valores h3 {
+      color: black;
+      background-color: #f3b96c;
+      border-radius: 10px;
+      margin: 10px auto;
+      width: 180px;
+      align-items: center; }
+
+/*SECTION-FORMULARIO*/
+.sectionformulario {
+  width: 100vw;
+  margin: auto;
+  text-align: center;
+  background-image: url(../multimedia/contactanos/fondocontactanos.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px; }
+  .sectionformulario .form {
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
-    align-items: flex-end;
-    z-index: 100;
-    border-radius: 20px;
-    float: right; }
-    body .redessociales .iconosredes {
-      margin: 5px 0 5px 0; }
-      body .redessociales .iconosredes .iconoinstagram {
-        background-color: #fd9f24;
-        border-radius: 100%; }
-        body .redessociales .iconosredes .iconoinstagram:hover {
-          background-color: #850000;
-          border-radius: 1rem 0 0 1rem; }
-      body .redessociales .iconosredes .iconowhatsapp {
-        background-color: #25D366;
-        border-radius: 100%; }
-        body .redessociales .iconosredes .iconowhatsapp:hover {
-          background-color: #fd9f24;
-          border-radius: 1rem 0 0 1rem; }
-      body .redessociales .iconosredes .iconofacebook {
-        background-color: #3b5998;
-        border-radius: 100%; }
-        body .redessociales .iconosredes .iconofacebook:hover {
-          background-color: #01035a;
-          border-radius: 1rem 0 0 1rem; }
-      body .redessociales .iconosredes a {
-        text-decoration: none;
-        color: white;
-        padding: .7rem;
-        display: flex;
-        transition: all .5s; }
-  body .bg-productos {
-    background-color: #525050;
-    width: 100vw; }
-    body .bg-productos .sectionproductos {
-      margin: auto;
-      text-align: center;
-      width: 80vw;
-      background-color: #ffffff; }
-      body .bg-productos .sectionproductos h2 {
-        width: 40%;
-        border-bottom: 2px solid #fd9f24;
-        border-left: 2px solid #fd9f24;
-        margin: auto; }
-      body .bg-productos .sectionproductos .galeriaproductos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center; }
-        body .bg-productos .sectionproductos .galeriaproductos .card {
-          width: 150px;
-          margin: 40px 40px;
-          overflow: hidden;
-          height: auto; }
-        body .bg-productos .sectionproductos .galeriaproductos img {
-          overflow: hidden; }
-          body .bg-productos .sectionproductos .galeriaproductos img:hover {
-            opacity: 0.6;
-            transition: .5s;
-            cursor: pointer; }
-      body .bg-productos .sectionproductos .btn {
-        background-color: #fd9f24;
-        width: 100%; }
-        body .bg-productos .sectionproductos .btn:hover {
-          color: #ffffff;
-          background-color: #3eccd1; }
-  body section {
-    width: 100vw; }
-    body section h2 {
+    background-color: #ffffff91;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    border-radius: 2px;
+    /*--TERMINOS-Y-CONDICIONES--*/
+    /*--BOTON-DE-REGISTRARSE--*/ }
+    @media (min-width: 768px) {
+      .sectionformulario .form {
+        width: 50%; } }
+    .sectionformulario .form .cajas {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 2px;
+      border: none;
+      border-left: 10px solid #000000;
+      transition: all .5s ease; }
+      .sectionformulario .form .cajas:hover, .sectionformulario .form .cajas .cajas:focus {
+        border-left: 10px solid #fd9f24; }
+    .sectionformulario .form h2 {
       border-bottom: 2px solid #fd9f24;
       border-left: 2px solid #fd9f24;
-      margin: 20px auto;
-      width: 40%;
-      text-align: center; }
-    body section .nuestroteam {
-      display: flex;
-      flex-wrap: wrap; }
-      body section .nuestroteam .profesores {
-        margin: auto;
-        text-align: center; }
-        body section .nuestroteam .profesores img {
-          display: inline;
-          width: 200px;
-          background-color: #000000;
-          height: 150px;
-          border-radius: 100%;
-          margin-left: 10px;
-          margin-top: 40px;
-          border: 2px solid #000000; }
-    body section .objetivos {
-      width: 90vw;
-      background-color: #e2e1e1;
-      border-radius: 10px;
-      margin: auto;
-      text-align: center; }
-      body section .objetivos img {
-        width: 100%;
-        border-radius: 10px;
-        display: none;
-        margin-bottom: 100px; }
-        @media (min-width: 768px) {
-          body section .objetivos img {
-            display: block; } }
-      body section .objetivos h2 {
-        color: #ffffff;
-        border-radius: 20px;
-        background-color: #fd9f24;
-        width: 100%; }
-    body section .valores {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%; }
-      body section .valores h3 {
-        color: black;
-        background-color: #f3b96c;
-        border-radius: 10px;
-        margin: 10px auto;
-        width: 180px;
-        align-items: center; }
-  body .sectionformulario {
-    width: 100vw;
-    margin: auto;
-    text-align: center;
-    background-image: url(../multimedia/contactanos/fondocontactanos.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10px; }
-    body .sectionformulario .form {
-      display: flex;
-      flex-direction: column;
-      background-color: #ffffff91;
-      padding: 20px;
-      width: 90%;
-      margin: auto;
+      width: 100%;
+      color: black; }
+    .sectionformulario .form .termino1 {
+      text-align: center;
+      color: #000000; }
+    .sectionformulario .form .termino2 {
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold; }
+    .sectionformulario .form .btn-form {
+      width: 100%;
+      padding: 15px;
       border-radius: 2px;
-      /*--TERMINOS-Y-CONDICIONES--*/
-      /*--BOTON-DE-REGISTRARSE--*/ }
-      @media (min-width: 768px) {
-        body .sectionformulario .form {
-          width: 50%; } }
-      body .sectionformulario .form .cajas {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-        border-radius: 2px;
-        border: none;
-        border-left: 10px solid #000000;
-        transition: all .5s ease; }
-        body .sectionformulario .form .cajas:hover, body .sectionformulario .form .cajas .cajas:focus {
-          border-left: 10px solid #fd9f24; }
-      body .sectionformulario .form h2 {
-        border-bottom: 2px solid #fd9f24;
-        border-left: 2px solid #fd9f24;
-        width: 100%;
-        color: black; }
-      body .sectionformulario .form .termino1 {
-        text-align: center;
-        color: #000000; }
-      body .sectionformulario .form .termino2 {
-        color: #000000;
-        text-decoration: none;
-        font-weight: bold; }
-      body .sectionformulario .form .btn-form {
-        width: 100%;
-        padding: 15px;
-        border-radius: 2px;
-        border: none;
-        margin: 20px 0;
-        font-size: 15px;
-        background: #000000;
-        color: #ffffff;
-        cursor: pointer;
-        transition: all .5s ease; }
-        body .sectionformulario .form .btn-form:hover {
-          background: #fd9f24; }
-      body .sectionformulario .form .tengo-cuenta {
-        text-align: center;
-        color: #000000;
-        font-weight: bold;
-        text-decoration: none; }
-        body .sectionformulario .form .tengo-cuenta:hover {
-          color: #ffffff; }
+      border: none;
+      margin: 20px 0;
+      font-size: 15px;
+      background: #000000;
+      color: #ffffff;
+      cursor: pointer;
+      transition: all .5s ease; }
+      .sectionformulario .form .btn-form:hover {
+        background: #fd9f24; }
+    .sectionformulario .form .tengo-cuenta {
+      text-align: center;
+      color: #000000;
+      font-weight: bold;
+      text-decoration: none; }
+      .sectionformulario .form .tengo-cuenta:hover {
+        color: #ffffff; }
