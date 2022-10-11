@@ -428,7 +428,7 @@ header{
 .redessociales{
     position: fixed;
     right:1%;
-    top:80%;
+    top:70%;
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
@@ -505,7 +505,7 @@ header{
                 overflow: hidden;
                 &:hover{
                     opacity: 0.6;
-                    transition: .5s;
+                    transition:.5s;
                     cursor:pointer;
 
                 }
