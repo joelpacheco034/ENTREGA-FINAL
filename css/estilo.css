@@ -34,33 +34,30 @@ header {
   .navbar li {
     justify-content: space-around;
     align-items: center; }
-
-.nav-item {
-  width: 100%;
-  text-align: center;
-  margin-top: 10px; }
-  .nav-item .nav-link {
-    font-size: 1.25rem;
-    color: #fd9f24; }
-    .nav-item .nav-link:hover {
-      color: #ffffff;
-      background-color: #fd9f24; }
-
-.collapse .dropdown {
-  text-align: center;
-  width: 100%;
-  border-radius: 4px; }
-
-.collapse .dropdown-menu {
-  background-color: #ffffff;
-  width: 100%;
-  margin: auto; }
-  .collapse .dropdown-menu a {
-    font-size: 1.1rem;
-    color: #fd9f24; }
-    .collapse .dropdown-menu a:hover {
-      color: #ffffff;
-      background-color: #fd9f24; }
+  .navbar .nav-item {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px; }
+    .navbar .nav-item .nav-link {
+      font-size: 1.25rem;
+      color: #fd9f24; }
+      .navbar .nav-item .nav-link:hover {
+        color: #ffffff;
+        background-color: #fd9f24; }
+  .navbar .collapse .dropdown {
+    text-align: center;
+    width: 100%;
+    border-radius: 4px; }
+  .navbar .collapse .dropdown-menu {
+    background-color: #ffffff;
+    width: 100%;
+    margin: auto; }
+    .navbar .collapse .dropdown-menu a {
+      font-size: 1.1rem;
+      color: #fd9f24; }
+      .navbar .collapse .dropdown-menu a:hover {
+        color: #ffffff;
+        background-color: #fd9f24; }
 
 .section1 {
   background-image: url(../multimedia/index/iniciogimnasio.jpg);
@@ -82,9 +79,9 @@ header {
     margin-left: 2rem;
     border: none;
     text-align: left; }
-  @media (min-width: 768px) {
-    .section1 {
-      display: block; } }
+    @media (min-width: 768px) {
+      .section1 .tituloimagen {
+        display: block; } }
 
 .section2 {
   display: flex;
