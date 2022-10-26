@@ -23,46 +23,50 @@
     <header>
         
     <!----LOGO--------------->
-        <div class="logocontenedor">
-            <a href="./index.html"><H1>Shark</H1></a>
-                <img src="./multimedia/logoshark.png" alt="logoshark">
+        <div class="contenedorheader">
+            <div class="logocontenedor">
+              <a href="./index.html"><H1>Shark</H1></a>
+              <img src="./multimedia/logoshark.png" alt="logoshark">
+            </div>
+
+                <!----NAV------------------------>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid m-auto">
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="./pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Productos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./pages/productos.html#hipervinculomusculosas">°Musculosas</a></li>
+                    <li><a class="dropdown-item" href="./pages/productos.html#hipervinculoremeras">°Remeras</a></li>
+                    <li><a class="dropdown-item" href="./pages/productos.html#hipervinculobuzos">°Buzos</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/contactanos.html">Contactanos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
             
         
         </div>
-<!----NAV------------------------>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid m-auto">
-              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon "></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
-                  <li class="nav-item ">
-                    <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
-                  </li>
 
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="./pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   Productos
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./pages/productos.html#hipervinculoremeras">Remeras</a></li>
-                      <li><a class="dropdown-item" href="./pages/productos.html#hipervinculomusculosas">Musculosas</a></li>
-                      <li><a class="dropdown-item" href="./pages/productos.html#hipervinculobuzos">Buzos</a></li>
-                    </ul>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                  </li>
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/contactanos.html">Contactanos</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
 
     </header>
 <!-----------------SECTION1---------->
@@ -102,12 +106,12 @@
             
             <div class="section3">
             
-                <div class="mapa">
+                <div class="mapa" data-aos="fade-right">
                 
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.3246425306033!2d-60.659310885108525!3d-32.94243727900464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab16ee52efd7%3A0x3db42d84ed4a8b4d!2sEstaci%C3%B3n%20Club%20Rosario!5e0!3m2!1ses-419!2sar!4v1661912514129!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             
-                <div class="informacion">
+                <div class="informacion"data-aos="fade-left">
                 
                     <div class="direccion">
                 
@@ -133,12 +137,12 @@
        <div class="nuestrogimnasio">
             <h2 >Nuestros gimnasios</h2>
         </div>    
-            <div class="section4">
+            <div class="section4" >
 
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleInterval"data-aos="zoom-out-down" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="./multimedia/index/carrousel/gimnasio3.jpg" class="d-block w-100" alt="gimnasioshark">
+                        <img src="./multimedia/index/carrousel/gimnasio3.jpeg" class="d-block w-100" alt="gimnasioshark">
                       </div>
                       <div class="carousel-item" data-bs-interval="2000">
                         <img src="./multimedia/index/carrousel/gimnasio2.jpg" class="d-block w-100" alt="gimnasioshark">
@@ -169,27 +173,27 @@
             <h2>Encontra tu  <strong>SHARK</strong> mas cercano</h2>
            <div class="ubicaciones">
             <div>
-                <a href=""><img src="./multimedia/index/ubicaciones/1.jpg" alt="sharkRosario"></a>
+                <a href=""><img src="./multimedia/index/ubicaciones/1.jpg" alt="sharkRosario" data-aos="flip-up"></a>
                 <h3>Rosario</h3>
             </div>
 
             <div>
-                <a href=""><img src="./multimedia/index/ubicaciones/2.jpg" alt="sharkTigre"></a>
+                <a href=""><img src="./multimedia/index/ubicaciones/2.jpg" alt="sharkTigre"data-aos="flip-down"></a>
                 <h3>Tigre</h3>
             </div>
 
             <div>
-                <a href=""><img src="./multimedia/index/ubicaciones/3.jpg" alt="sharkMendoza"></a>
+                <a href=""><img src="./multimedia/index/ubicaciones/3.jpg" alt="sharkMendoza" data-aos="flip-up"></a>
                 <h3>Mendoza</h3>
             </div>
 
             <div>
-                <a href=""><img src="./multimedia/index/ubicaciones/4.jpg" alt="sharksantafe"></a>
+                <a href=""><img src="./multimedia/index/ubicaciones/4.jpg" alt="sharksantafe"data-aos="flip-down"></a>
                 <h3>Santa Fe</h3>
             </div>
 
             <div>
-                <a href=""><img src="./multimedia/index/ubicaciones/5.jpeg" alt="sharkbariloche"></a>
+                <a href=""><img src="./multimedia/index/ubicaciones/5.jpeg" alt="sharkbariloche"data-aos="flip-up"></a>
                 <h3>Bariloche</h3>
             </div>
             </div>
@@ -202,24 +206,24 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                 Boxeo
+                  🥊​Boxeo
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body1"> 
-                    <p>En términos globales, el boxeo es un conjunto de deportes de combate centrados en el golpe, en el que dos oponentes se enfrentan en una pelea usando al menos los puños, y posiblemente involucrando otras acciones como patadas, codazos, rodillazos, cabezazos, dependiendo de las reglas.</p>
+                    <p>En términos globales, el boxeo es un conjunto de deportes de combate centrados en el golpe, en el que dos oponentes se enfrentan en una pelea usando al menos los puños.</p>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Musculacion
+                  🔩​​Musculacion
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body2"> 
-                    <p>Es una alternativa de actividad física basada generalmente en ejercicio físico de media a alta intensidad, con la finalidad encontrar un equilibrio muscular entre los segmentos corporales, generalmente se utilizan estímulos anaeróbicos, principalmente se desarrolla en los gimnasios.</p>
+                    <p>Es una alternativa de actividad física basada generalmente en ejercicio físico de media a alta intensidad, con la finalidad encontrar un equilibrio muscular entre los segmentos corporales.</p>
 
                 </div>
               </div>
@@ -227,7 +231,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Croosfit
+                  🏋️‍♂️Croosfit
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -237,6 +241,17 @@
               </div>
             </div>
           </div>
+
+    </div>
+    <div class="background-court">
+      <img src="./multimedia/index/imagenbackgroud.png" alt="imagenbackgroud">
+    </div>
+    <div class="publicidad">
+      <h5>Recibí las novedades y promociones exclusivas de SHARK</h5>
+      <div class="promociones">
+        <input class="emailpublicidad" type="email" placeholder="Ingresá tu correo electrónico" required maxlength="30">
+        <input class="registratepublicidad" type="submit" name="registrate" value="Registrate">
+      </div>
 
     </div>
     
@@ -255,45 +270,32 @@
     <div class="informacionfooter">
         <div class="columnasfooter">
             <h4 >Shark</h4>
-            <a href="">Quienes somos</a>
-            <a href="">Trabaja con nosotros</a>
-            <a href="">Boton de arrepentimiento</a>
+            <a href="./pages/nosotros.html">Quienes somos</a>
+            <a href="./pages/nosotros.html">Trabaja con nosotros</a>
+            <a href="./pages/nosotros.html">Boton de arrepentimiento</a>
         </div>
         
         <div class="columnasfooter">
             <h4>Planes</h4>
-            <a href="">Basic/Black</a>
-            <a href="">Contrato</a>
+            <a href="./pages/contactanos.html">Basic/Black</a>
+            <a href="./pages/contactanos.html">Contrato</a>
         </div>
         
         <div class="columnasfooter">
             <h4>Siguenos</h4>
-            <a href="">Facebook</a>
-            <a href="">Instagram</a>
-            <a href="">Twitter</a>
+            <a href="https://www.facebook.com/" target="blank">Facebook</a>
+            <a href="https://www.instagram.com/" target="blank">Instagram</a>
+            <a href="https://web.whatsapp.com/" target="blank">whatsapp</a>
         </div>
     </div>
 <!---REDES-SOCIALES-->
 <div class="redessociales">
     <div>
-        
         <div class="iconosredes">
-            <a href="#" class="iconoinstagram"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://web.whatsapp.com/" class="iconowhatsapp" target="blank"><i class="fa-brands fa-whatsapp"></i></a> 
         </div>
         
-        <div class="iconosredes">
-            <a href="#" class="iconowhatsapp"><i class="fa-brands fa-whatsapp"></i></a> 
-        </div>
-        
-        <div class="iconosredes">
-            <a href="#" class="iconofacebook"><i class="fa-brands fa-facebook"></i></a>
-        </div>
     </div>
-    
-
-    
-
-    
 </div>
 
 </footer>

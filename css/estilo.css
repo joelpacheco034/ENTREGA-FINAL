@@ -6,10 +6,10 @@
   font-family: 'Oswald',sans-serif; }
 
 header {
-  width: 100vw;
+  width: 100%;
   /*---LOGO---*/ }
   header .logocontenedor {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,21 +29,36 @@ header {
   position: relative;
   z-index: 100; }
   .navbar ul {
+    background-color: #fd9f24;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto; }
+    @media (max-width: 992px) {
+      .navbar ul {
+        border-radius: 0;
+        width: 100%;
+        background-color: #000000; } }
   .navbar li {
     justify-content: space-around;
     align-items: center; }
   .navbar .nav-item {
     width: 100%;
-    text-align: center;
-    margin-top: 10px; }
+    text-align: center; }
     .navbar .nav-item .nav-link {
       font-size: 1.25rem;
-      color: #fd9f24; }
+      color: #000000; }
+      @media (max-width: 992px) {
+        .navbar .nav-item .nav-link {
+          color: #fd9f24;
+          width: 100%;
+          margin: 5px auto;
+          border-radius: 10px; } }
       .navbar .nav-item .nav-link:hover {
         color: #ffffff;
-        background-color: #fd9f24; }
+        background-color: #fd9f24;
+        border-radius: 10px; }
   .navbar .collapse .dropdown {
     text-align: center;
     width: 100%;
@@ -68,10 +83,12 @@ header {
   width: 100%;
   margin: auto;
   overflow: hidden;
-  display: flex;
+  display: none;
   justify-content: left;
-  align-items: center;
-  display: none; }
+  align-items: center; }
+  @media (min-width: 768px) {
+    .section1 {
+      display: block; } }
   .section1 .tituloimagen {
     font-size: 4rem;
     color: #ffffff;
@@ -79,9 +96,9 @@ header {
     margin-left: 2rem;
     border: none;
     text-align: left; }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       .section1 .tituloimagen {
-        display: block; } }
+        font-size: 5rem; } }
 
 .section2 {
   display: flex;
@@ -141,6 +158,10 @@ header {
   .contenedorboton .botoninscripcion {
     background-color: #e92828;
     width: 100%;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
     border-radius: 6px;
     transition: .5s; }
     .contenedorboton .botoninscripcion:hover {
@@ -153,7 +174,7 @@ header {
 
 /*----------NUESTRA--UBICACION---*/
 .nuestraubicacion {
-  width: 100vw;
+  width: 98vw;
   margin: 40px auto; }
   .nuestraubicacion h2 {
     width: 60%;
@@ -170,15 +191,17 @@ header {
       .nuestraubicacion .section3 {
         flex-direction: row; } }
     .nuestraubicacion .section3 .mapa {
-      width: 100%;
-      margin: auto; }
+      width: 98%;
+      margin: auto;
+      transition: all 1s ease; }
       .nuestraubicacion .section3 .mapa iframe {
         width: 100%;
         margin: auto; }
     .nuestraubicacion .section3 .informacion {
       width: 100%;
       text-align: center;
-      display: grid; }
+      display: grid;
+      transition: all 1s ease; }
       @media (min-width: 1024px) {
         .nuestraubicacion .section3 .informacion {
           font-size: 1.5rem; } }
@@ -199,7 +222,8 @@ header {
 
 /*--SECTION4--*/
 #carouselExampleInterval {
-  width: 90%;
+  transition: all 1s ease;
+  width: 85%;
   margin: auto;
   display: none; }
   @media (min-width: 768px) {
@@ -219,6 +243,7 @@ header {
     justify-content: center;
     align-items: center; }
     .lugares .ubicaciones img {
+      transition: all 1s ease;
       width: 250px;
       margin: 10px 10px; }
       .lugares .ubicaciones img:hover {
@@ -233,45 +258,116 @@ header {
   border-bottom: 2px solid #fd9f24;
   border-left: 2px solid #fd9f24; }
 
-.section5 .accordion .accordion-body1 {
-  color: #ffffff;
-  background-image: url(../multimedia/index/boxeo.jpg);
-  height: 150px; }
+.section5 .accordion {
+  width: 100%;
+  margin: 0 auto 40px auto; }
   @media (min-width: 768px) {
-    .section5 .accordion .accordion-body1 {
-      font-size: 1.3rem; } }
-  @media (min-width: 1024px) {
-    .section5 .accordion .accordion-body1 {
-      font-size: 1.5rem; } }
+    .section5 .accordion {
+      width: 90%; } }
+  .section5 .accordion .accordion-item button {
+    font-size: 1.5rem;
+    background-color: #d1d2d2;
+    color: #000000; }
+    .section5 .accordion .accordion-item button:focus {
+      color: #fd9f24; }
+  .section5 .accordion .accordion-item .accordion-body1 {
+    color: #ffffff;
+    background-image: url(../multimedia/index/acordion/boxeo.jpg);
+    background-size: cover;
+    padding: 10px;
+    text-align: center;
+    height: 150px; }
+    @media (min-width: 768px) {
+      .section5 .accordion .accordion-item .accordion-body1 {
+        font-size: 1.3rem; } }
+    @media (min-width: 1024px) {
+      .section5 .accordion .accordion-item .accordion-body1 {
+        font-size: 1.5rem;
+        height: 250px;
+        padding: 60px; } }
+  .section5 .accordion .accordion-item .accordion-body2 {
+    background-image: url(../multimedia/index/acordion/musculacion.jpg);
+    background-size: cover;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    height: 150px; }
+    @media (min-width: 768px) {
+      .section5 .accordion .accordion-item .accordion-body2 {
+        font-size: 1.3rem; } }
+    @media (min-width: 1024px) {
+      .section5 .accordion .accordion-item .accordion-body2 {
+        font-size: 1.5rem;
+        height: 250px;
+        padding: 60px; } }
+  .section5 .accordion .accordion-item .accordion-body3 {
+    background-image: url(../multimedia/index/acordion/croosfit.jpg);
+    background-size: cover;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    height: 150px; }
+    @media (min-width: 768px) {
+      .section5 .accordion .accordion-item .accordion-body3 {
+        font-size: 1.3rem; } }
+    @media (min-width: 1024px) {
+      .section5 .accordion .accordion-item .accordion-body3 {
+        font-size: 1.5rem;
+        height: 250px;
+        padding: 60px; } }
 
-.section5 .accordion .accordion-body2 {
-  background-image: url(../multimedia/index/musculacion.jpg);
-  color: #ffffff;
-  height: 150px; }
-  @media (min-width: 768px) {
-    .section5 .accordion .accordion-body2 {
-      font-size: 1.3rem; } }
-  @media (min-width: 1024px) {
-    .section5 .accordion .accordion-body2 {
-      font-size: 1.5rem; } }
+/*--EFECTO-BACKGROUND--*/
+.background-court {
+  width: 100%; }
+  .background-court img {
+    width: 100%; }
 
-.section5 .accordion .accordion-body3 {
-  background-image: url(../multimedia/index/croosfit.jpg);
-  color: #ffffff;
-  height: 150px; }
-  @media (min-width: 768px) {
-    .section5 .accordion .accordion-body3 {
-      font-size: 1.3rem; } }
-  @media (min-width: 1024px) {
-    .section5 .accordion .accordion-body3 {
-      font-size: 1.5rem; } }
+/*--PROMOCIONES--*/
+.publicidad {
+  display: flex;
+  flex-direction: column;
+  background-color: #d1d2d2;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  width: 100%;
+  margin: auto; }
+  .publicidad h5 {
+    color: #000000;
+    width: 100%;
+    text-align: center; }
+  .publicidad .promociones {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    .publicidad .promociones .emailpublicidad {
+      height: 70px;
+      width: 60%;
+      border: none;
+      font-size: 1.2rem;
+      padding: 10px; }
+      .publicidad .promociones .emailpublicidad:focus {
+        border: 1px solid #fd9f24; }
+      @media (min-width: 768px) {
+        .publicidad .promociones .emailpublicidad {
+          width: 30%; } }
+    .publicidad .promociones .registratepublicidad {
+      background-color: #b4b2b2;
+      width: 20%;
+      border: none; }
+      .publicidad .promociones .registratepublicidad:hover {
+        background-color: #fd9f24;
+        color: #ffffff; }
+      @media (min-width: 768px) {
+        .publicidad .promociones .registratepublicidad {
+          width: 10%; } }
 
 /*--FOOTER--*/
 .footer {
-  width: 100vw;
+  width: 100%;
   height: 400px;
   background-color: #3a3939;
-  border-top: 2px solid #000000; }
+  border-top: 1px solid #000000; }
   .footer .footerpie {
     display: flex;
     flex-direction: column;
@@ -305,46 +401,36 @@ header {
 /*REDES-SOCIALES*/
 .redessociales {
   position: fixed;
-  right: 1%;
-  top: 70%;
+  right: 2%;
+  top: 85%;
   display: flex;
-  flex-direction: column;
-  font-size: 1.5rem;
-  align-items: flex-end;
+  font-size: 1.8rem;
   z-index: 100;
   border-radius: 20px;
   float: right; }
-  .redessociales .iconosredes {
-    margin: 5px 0 5px 0; }
-    .redessociales .iconosredes .iconoinstagram {
-      background-color: #fd9f24;
-      border-radius: 100%; }
-      .redessociales .iconosredes .iconoinstagram:hover {
-        background-color: #850000;
-        border-radius: 1rem 0 0 1rem; }
-    .redessociales .iconosredes .iconowhatsapp {
-      background-color: #25D366;
-      border-radius: 100%; }
-      .redessociales .iconosredes .iconowhatsapp:hover {
-        background-color: #fd9f24;
-        border-radius: 1rem 0 0 1rem; }
-    .redessociales .iconosredes .iconofacebook {
-      background-color: #3b5998;
-      border-radius: 100%; }
-      .redessociales .iconosredes .iconofacebook:hover {
-        background-color: #01035a;
-        border-radius: 1rem 0 0 1rem; }
-    .redessociales .iconosredes a {
-      text-decoration: none;
-      color: white;
-      padding: .7rem;
-      display: flex;
-      transition: all .5s; }
+  .redessociales .iconosredes .iconowhatsapp {
+    background-color: #25D366;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%; }
+    .redessociales .iconosredes .iconowhatsapp:hover {
+      background-color: #000000;
+      color: #25D366;
+      height: 90px;
+      width: 90px; }
+  .redessociales .iconosredes a {
+    text-decoration: none;
+    color: white;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s; }
 
 /*--PRODUCTOS*/
 .bg-productos {
-  background-color: #525050;
-  width: 100vw; }
+  background-color: #302f2f;
+  width: 100%; }
   .bg-productos .sectionproductos {
     margin: auto;
     text-align: center;
@@ -380,7 +466,7 @@ header {
 
 /*--NOSOTROS*/
 section {
-  width: 100vw; }
+  width: 100%; }
   section h2 {
     border-bottom: 2px solid #fd9f24;
     border-left: 2px solid #fd9f24;
@@ -435,7 +521,7 @@ section {
 
 /*SECTION-FORMULARIO*/
 .sectionformulario {
-  width: 100vw;
+  width: 100%;
   margin: auto;
   text-align: center;
   background-image: url(../multimedia/contactanos/fondocontactanos.jpeg);
@@ -445,7 +531,7 @@ section {
   .sectionformulario .form {
     display: flex;
     flex-direction: column;
-    background-color: #ffffff91;
+    background-color: #bdbdbdb9;
     padding: 20px;
     width: 90%;
     margin: auto;
