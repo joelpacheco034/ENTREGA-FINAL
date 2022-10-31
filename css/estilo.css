@@ -58,7 +58,7 @@ header {
       .navbar .nav-item .nav-link:hover {
         color: #ffffff;
         background-color: #fd9f24;
-        border-radius: 10px; }
+        border-radius: 9px; }
   .navbar .collapse .dropdown {
     text-align: center;
     width: 100%;
