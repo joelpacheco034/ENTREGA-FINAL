@@ -152,7 +152,7 @@ header {
 
 /*-------BTN--INSCRIPCION*/
 .contenedorboton {
-  width: 70vw;
+  width: 70%;
   text-align: center;
   margin: 10px auto; }
   .contenedorboton .botoninscripcion {
@@ -174,7 +174,7 @@ header {
 
 /*----------NUESTRA--UBICACION---*/
 .nuestraubicacion {
-  width: 98vw;
+  width: 98%;
   margin: 40px auto; }
   .nuestraubicacion h2 {
     width: 60%;
@@ -195,8 +195,8 @@ header {
       margin: auto;
       transition: all 1s ease; }
       .nuestraubicacion .section3 .mapa iframe {
-        width: 100%;
-        margin: auto; }
+        margin: auto;
+        width: 100%; }
     .nuestraubicacion .section3 .informacion {
       width: 100%;
       text-align: center;
@@ -234,7 +234,7 @@ header {
   text-align: center;
   margin: 20px auto;
   background-color: #e2dede;
-  width: 80vw; }
+  width: 80%; }
   .lugares .ubicaciones {
     width: 100%;
     margin: auto;
@@ -434,7 +434,7 @@ header {
   .bg-productos .sectionproductos {
     margin: auto;
     text-align: center;
-    width: 80vw;
+    width: 80%;
     background-color: #ffffff; }
     .bg-productos .sectionproductos h2 {
       width: 40%;
@@ -475,7 +475,11 @@ section {
     text-align: center; }
   section .nuestroteam {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: auto; }
     section .nuestroteam .profesores {
       margin: auto;
       text-align: center; }
@@ -489,7 +493,7 @@ section {
         margin-top: 40px;
         border: 2px solid #000000; }
   section .objetivos {
-    width: 90vw;
+    width: 80%;
     background-color: #e2e1e1;
     border-radius: 10px;
     margin: auto;
@@ -498,7 +502,8 @@ section {
       width: 100%;
       border-radius: 10px;
       display: none;
-      margin-bottom: 100px; }
+      margin-bottom: 100px;
+      height: 400px; }
       @media (min-width: 768px) {
         section .objetivos img {
           display: block; } }
@@ -536,6 +541,7 @@ section {
     width: 90%;
     margin: auto;
     border-radius: 2px;
+    transition: all 1s ease;
     /*--TERMINOS-Y-CONDICIONES--*/
     /*--BOTON-DE-REGISTRARSE--*/ }
     @media (min-width: 768px) {

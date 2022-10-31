@@ -16,6 +16,7 @@ $laptop:1024px;
 }
 
 
+
 header{
     width:100%;
     /*---LOGO---*/
@@ -48,6 +49,7 @@ header{
     background-color: #000000;
     position: relative;
     z-index: 100;
+
 
     ul{
         background-color:$color-secundario;
@@ -225,7 +227,7 @@ header{
 /*-------BTN--INSCRIPCION*/
 
 .contenedorboton{
-    width: 70vw;
+    width: 70%;
     text-align: center;
     margin:10px auto;
 
@@ -254,7 +256,7 @@ header{
 }
 /*----------NUESTRA--UBICACION---*/
 .nuestraubicacion{
-    width: 98vw;
+    width: 98%;
     margin: 40px auto;
     h2{
         width: 60%;
@@ -277,8 +279,8 @@ header{
             margin:auto;
             transition: all 1s ease;
             iframe{
-                width: 100%;
                 margin: auto;
+                width: 100%;
 
             }
         }
@@ -330,7 +332,7 @@ header{
     text-align: center;
     margin: 20px auto;
     background-color: #e2dede;
-    width: 80vw;
+    width: 80%;
     .ubicaciones{
         width: 100%;
         margin: auto;
@@ -588,7 +590,7 @@ header{
 .sectionproductos{
     margin: auto;
     text-align: center;
-    width: 80vw;
+    width: 80%;
     background-color: #ffffff;
     h2{
         width: 40%;
@@ -642,6 +644,10 @@ section{
     .nuestroteam{
         display: flex;
         flex-wrap: wrap;
+        width:90%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
         .profesores{
             margin: auto;
             text-align: center;
@@ -658,7 +664,7 @@ section{
     }
     }
     .objetivos{
-        width: 90vw;
+        width: 80%;
         background-color: #e2e1e1;
         border-radius: 10px;
         margin: auto;
@@ -668,6 +674,7 @@ section{
         border-radius: 10px;
         display: none;
         margin-bottom: 100px;
+        height: 400px;
         @media(min-width:768px){
             display: block;
         }
@@ -714,6 +721,7 @@ section{
         width: 90%;
         margin:auto;
         border-radius: 2px;
+        transition: all 1s ease;
         @media(min-width:$tablet){
             width: 50%;
         }
